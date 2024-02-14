@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Livros Lidos</title>
+    <style>
+
+        :root{
+        --cor1:#181818;   /*preto da hotbar*/ 
+        --cor2:#025920;    /* medio */
+        --cor3:#012626;    /* escuro*/
+        --cor4:#72A684;/*verde claro*/
+      
+}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ecf3ef;
+            color: #333;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: var(--cor1);
+        }
+        .livro-container {
+            background-color: var(--cor4);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        .livro {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px 10px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .livro img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;}
+        
+        .livro:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: var(--cor3);
+        }
+        p {
+            color: #181818;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fav Livros</h1>
+
+    <div class="livro-container">
+        <div class="livro">
+            <img src="Capitães_da_Areia.jpg" alt="">
+            <h2>Capitães da areia</h2>
+            <p>Resumo breve do livro 1...</p>
+        </div>
+
+        <div class="livro">
+            <img src="maus.jpg" alt="">
+            <h2>Capitães da areia</h2>
+            <p>Resumo breve do livro 1...</p>
+        </div>
+
+        <div class="livro">
+            <img src="Nemtodoamor.jpg" alt="">
+            <h2>Capitães da areia</h2>
+            <p>Resumo breve do livro 1...</p>
+        </div>
+
+        <div class="livro">
+            <img src="revolução.jpg" alt="">
+            <h2>Capitães da areia</h2>
+            <p>Resumo breve do livro 1...</p>
+        </div>
+
+        <div class="livro">
+            <img src="todasflores.jpg" alt="">
+            <h2>Capitães da areia</h2>
+            <p>Resumo breve do livro 1...</p>
+        </div>
+
+        <div class="livro">
+            <img src="umabreve.jpg" alt="">
+            <h2>Capitães da areia</h2>
+            <p>Resumo breve do livro 1...</p>
+        </div>
+        
+
+        <!-- Adicione mais divs .livro conforme necessário -->
+    </div>
+
+</body>
+</html>
